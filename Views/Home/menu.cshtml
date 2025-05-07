@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Меню";
+}
+
+<header class="py-4">
+    <div class="container text-center">
+        <h1 class="fw-bold text-black" style="font-size: 48px;">Меню</h1>
+    </div>
+</header>
+
+<section class="container text-center mb-5">
+    <div class="row justify-content-center">
+        @for (int i = 1; i <= 3; i++)
+        {
+            <div class="col-md-4 mb-3">
+                <img src="@Url.Content($"~/img/Меню/меню{i}.jpg")"
+                     alt="Меню @i"
+                     class="img-fluid shadow rounded"
+                     style="cursor: pointer;"
+                     data-bs-toggle="modal"
+                     data-bs-target="#imageModal"
+                     data-img="@Url.Content($"~/img/Меню/меню{i}.jpg")" />
+
+            </div>
+        }
+    </div>
+</section>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <img id="modalImage" src="" class="img-fluid rounded shadow" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        imageModal.addEventListener('show.bs.modal', function (event) {
+            const triggerImg = event.relatedTarget;
+            const imgSrc = triggerImg.getAttribute('data-img');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.setAttribute('src', imgSrc);
+        });
+    </script>
+}

@@ -1,0 +1,393 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pastar.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Pastar.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestBlack1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestBlack1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestBold1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestBold1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestExtraBold1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestExtraBold1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestLight1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestLight1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestMedium1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestMedium1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestRegular1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestRegular1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\fonts\\OnestThin1602-hint.ttf",
+      "PackagePath": "staticwebassets\\fonts\\OnestThin1602-hint.ttf"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Карусель\\карусель1.jpg",
+      "PackagePath": "staticwebassets\\img\\Карусель\\карусель1.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Карусель\\карусель2.jpg",
+      "PackagePath": "staticwebassets\\img\\Карусель\\карусель2.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Карусель\\карусель3.jpg",
+      "PackagePath": "staticwebassets\\img\\Карусель\\карусель3.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Карусель\\карусель4.jpg",
+      "PackagePath": "staticwebassets\\img\\Карусель\\карусель4.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Карусель\\карусель5.jpg",
+      "PackagePath": "staticwebassets\\img\\Карусель\\карусель5.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Круги.png",
+      "PackagePath": "staticwebassets\\img\\Круги.png"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Меню\\меню1.jpg",
+      "PackagePath": "staticwebassets\\img\\Меню\\меню1.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Меню\\меню2.jpg",
+      "PackagePath": "staticwebassets\\img\\Меню\\меню2.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Меню\\меню3.jpg",
+      "PackagePath": "staticwebassets\\img\\Меню\\меню3.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Спагетти классические\\Спагетти классические1.jpg",
+      "PackagePath": "staticwebassets\\img\\Спагетти классические\\Спагетти классические1.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Спагетти классические\\Спагетти классические2.jpg",
+      "PackagePath": "staticwebassets\\img\\Спагетти классические\\Спагетти классические2.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Спагетти классические\\Спагетти классические3.jpg",
+      "PackagePath": "staticwebassets\\img\\Спагетти классические\\Спагетти классические3.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Спагетти\\Спагетти1.jpg",
+      "PackagePath": "staticwebassets\\img\\Спагетти\\Спагетти1.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Спагетти\\Спагетти2.jpg",
+      "PackagePath": "staticwebassets\\img\\Спагетти\\Спагетти2.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Спагетти\\Спагетти3.jpg",
+      "PackagePath": "staticwebassets\\img\\Спагетти\\Спагетти3.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фарфалле\\Фарфалле1.jpg",
+      "PackagePath": "staticwebassets\\img\\Фарфалле\\Фарфалле1.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фарфалле\\Фарфалле2.jpg",
+      "PackagePath": "staticwebassets\\img\\Фарфалле\\Фарфалле2.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фарфалле\\Фарфалле3.jpg",
+      "PackagePath": "staticwebassets\\img\\Фарфалле\\Фарфалле3.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фарфалле\\Фарфалле4.jpg",
+      "PackagePath": "staticwebassets\\img\\Фарфалле\\Фарфалле4.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фузилли\\Фузилли1.jpg",
+      "PackagePath": "staticwebassets\\img\\Фузилли\\Фузилли1.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фузилли\\Фузилли2.jpg",
+      "PackagePath": "staticwebassets\\img\\Фузилли\\Фузилли2.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фузилли\\Фузилли3.jpg",
+      "PackagePath": "staticwebassets\\img\\Фузилли\\Фузилли3.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Фузилли\\Фузилли4.jpg",
+      "PackagePath": "staticwebassets\\img\\Фузилли\\Фузилли4.jpg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\красн лого пастарь.svg",
+      "PackagePath": "staticwebassets\\img\\красн лого пастарь.svg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\круг лого.svg",
+      "PackagePath": "staticwebassets\\img\\круг лого.svg"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pastar.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pastar.props",
+      "PackagePath": "build\\Pastar.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pastar.props",
+      "PackagePath": "buildMultiTargeting\\Pastar.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pastar.props",
+      "PackagePath": "buildTransitive\\Pastar.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,149 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+font-family: 'Onest', sans-serif;
+body {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* 1. Thin (100) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestThin1602-hint.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. Light (300) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestLight1602-hint.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 3. Regular (400) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestRegular1602-hint.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 4. Medium (500) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestMedium1602-hint.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 5. Bold (700) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestBold1602-hint.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 6. ExtraBold (800) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestExtraBold1602-hint.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 7. Black (900) */
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/OnestBlack1602-hint.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+  text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-right: 60px;
+    margin-top: -60px;
+}
+
+.custom-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    background-color: white;
+    color: black; /* ? цвет текста */
+    margin-left: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* ? плавное изменение цвета */
+    width: auto;
+}
+
+    .custom-button:hover {
+        background-color: #f5f5f5; /* лёгкий серый фон при наведении */
+    }
+.btn-outline-danger {
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-outline-danger:hover {
+        background-color: #dc3545;
+        color: white;
+    }
+<style >
+.modal-dialog {
+    max-width: 90vw; /* Ограничиваем ширину окна */
+    max-height: 90vh; /* Ограничиваем высоту окна */
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-height: 300px; /* Минимальная высота для маленьких изображений */
+}
+
+    .modal-body img {
+        max-width: 90vw; /* Изображение не выйдет за пределы окна по ширине */
+        max-height: 80vh; /* Изображение не выйдет за пределы окна по высоте */
+        width: auto;
+        height: auto;
+        object-fit: contain; /* Сохраняет пропорции */
+        margin: auto;
+    }
+
+</style >

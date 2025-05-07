@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Пастарь</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="py-9">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/img/круг лого.svg"
+                     alt="Круглый логотип"
+                     style="height: 200px; margin-left: 60px; margin-top: 40px;" />
+            </a>
+
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/img/красн лого пастарь.svg"
+                     alt="Логотип Пастарь"
+                     style="height: 100px;" />
+            </a>
+        </div>
+    </header>
+
+    <div class="container d-flex justify-content-end gap-3 my-3">
+        <a asp-controller="Boxes" asp-action="Index" class="custom-button">Боксы</a>
+        <a asp-controller="Home" asp-action="Menu" class="custom-button">Меню</a>
+        <a asp-controller="Home" asp-action="BonusCard" class="custom-button">Бонусная карта</a>
+        <a asp-controller="Home" asp-action="Reservation" class="custom-button">Бронь</a>
+        <a asp-controller="Cart" asp-action="Index" class="custom-button">🛒</a>
+
+    </div>
+
+    <div class="container" style="max-width: 1140px;">
+        @RenderBody()
+    </div>
+
+
+    <footer class="text-center mt-5 mb-3">
+        <p>тел. +73422737361</p>
+        <p>Адрес: Старокирпичный переулок</p>
+        <p>📍 <a href="https://yandex.ru/maps/50/perm/?ll=56.244228%2C58.012794&mode=routes&rtext=~58.012789%2C56.244229&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D57219302455&z=15" target="_blank">Найти нас на Яндекс картах</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
