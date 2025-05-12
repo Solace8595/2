@@ -5,17 +5,26 @@ using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Добавление контроллеров и представлений
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddViewOptions(options =>
+    {
+        options.HtmlHelperOptions.ClientValidationEnabled = true;
+    });
 
-// Подключение PostgreSQL
+builder.Services.AddAntiforgery(options =>
+{
+    options.HeaderName = "XSRF-TOKEN";
+    options.Cookie.Name = "XSRF-COOKIE";
+    options.Cookie.HttpOnly = true;
+    options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
+});
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
                        ?? "Host=localhost;Port=5432;Database=Pastar;Username=postgres;Password=13092005";
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-// Добавление поддержки сессий
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -24,7 +33,6 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// Регистрация Telegram-бота
 builder.Services.AddSingleton<TelegramBot>(provider =>
 {
     var botToken = builder.Configuration["TelegramBot:Token"]
@@ -32,13 +40,10 @@ builder.Services.AddSingleton<TelegramBot>(provider =>
     return new TelegramBot(botToken);
 });
 
-// Сервис для работы с ботом
 builder.Services.AddSingleton<TelegramBotService>();
 
-// Фоновая служба для запуска бота
 builder.Services.AddHostedService<TelegramBotBackgroundService>();
 
-// Построение приложения
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -60,5 +65,4 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// Запуск приложения
 app.Run();

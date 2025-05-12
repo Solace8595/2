@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Pastar.Data;
 using Pastar.Models;
-using Pastar.Helpers;
-using System.Linq;
 using Pastar.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using Pastar.Helpers;
 
 namespace Pastar.Controllers
 {
@@ -75,6 +75,7 @@ namespace Pastar.Controllers
             ViewBag.ConnectionMethods = _context.WayOfConnections.ToList();
             return View(boxes);
         }
+
         [HttpPost]
         public IActionResult UpdateQuantity([FromBody] CartUpdateModel model)
         {
@@ -86,7 +87,7 @@ namespace Pastar.Controllers
 
             if (cart.ContainsKey(model.BoxId))
             {
-                cart[model.BoxId] = Math.Max(1, cart[model.BoxId] + model.QuantityChange); 
+                cart[model.BoxId] = Math.Max(1, cart[model.BoxId] + model.QuantityChange);
             }
             else
             {
@@ -113,11 +114,6 @@ namespace Pastar.Controllers
                 newTotal = total
             });
         }
-        public class CartUpdateModel
-        {
-            public long BoxId { get; set; }
-            public int QuantityChange { get; set; }
-        }
 
         [HttpPost]
         public IActionResult RemoveFromCart(long boxId)
@@ -130,22 +126,56 @@ namespace Pastar.Controllers
             }
 
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-            var boxIds = cart.Keys.ToList();
-            var boxes = _context.Boxes
-                .Where(b => boxIds.Contains(b.BoxId))
-                .ToList();
-            var total = boxes.Sum(b => b.BoxPrice * cart[b.BoxId]);
+
+            // Пересчитываем общую стоимость после удаления
+            decimal total = 0;
+            foreach (var cartItem in cart)
+            {
+                var box = _context.Boxes.FirstOrDefault(b => b.BoxId == cartItem.Key);
+                if (box != null)
+                {
+                    total += (decimal)box.BoxPrice * (decimal)cartItem.Value;
+                }
+            }
 
             return Json(new { total });
         }
-
-
-        public class CartItem
+        [HttpGet]
+        public IActionResult RefreshAntiforgeryToken()
         {
-            public Box Box { get; set; }
-            public int Quantity { get; set; }
+            return PartialView("_AntiForgeryToken");
         }
+
+        public class CartUpdateModel
+        {
+            public long BoxId { get; set; }
+            public int QuantityChange { get; set; }
+        }
+
         public IActionResult ViewCart()
+        {
+            var cartItems = GetCartItemsFromSession();
+            return View(cartItems);
+        }
+
+        [HttpGet]
+        public IActionResult GetCartItems()
+        {
+            var cartItems = GetCartItemsFromSession();
+
+            var result = cartItems.Select(ci => new
+            {
+                BoxId = ci.Box.BoxId,
+                Name = ci.Box.BoxName,
+                Price = ci.Box.BoxPrice,
+                Quantity = ci.Quantity,
+                Total = ci.Box.BoxPrice * ci.Quantity
+            });
+
+            return Json(result);
+        }
+
+        private List<CartItem> GetCartItemsFromSession()
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
@@ -164,9 +194,13 @@ namespace Pastar.Controllers
                 }
             }
 
-            return View(cartItems);
+            return cartItems;
         }
 
+        public class CartItem
+        {
+            public Box Box { get; set; }
+            public int Quantity { get; set; }
+        }
     }
 }
-

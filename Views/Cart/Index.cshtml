@@ -7,7 +7,6 @@
     @Html.AntiForgeryToken()
     <h1 class="text-center mb-5">Ваша корзина</h1>
 
-    <!-- Блок для отображения ошибок -->
     <div id="error-message" class="alert alert-danger d-none mt-3" role="alert"></div>
 
     @if (!Model.Any())
@@ -93,7 +92,9 @@
             <div class="modal-body d-flex flex-column-reverse flex-md-row">
                 <div class="w-100 w-md-75 p-4">
                     <form id="orderForm" method="post">
-                        @Html.AntiForgeryToken()
+                        <div id="antiForgeryContainer">
+                            @Html.AntiForgeryToken()
+                        </div>
 
                         <div class="row">
                             <div class="col-md-6 mb-2">
@@ -155,6 +156,53 @@
 
 @section Scripts {
     <script>
+        function showOrderModal() {
+            const modalTotal = document.getElementById("modalTotal");
+            const cartTotal = document.getElementById("total").textContent.trim();
+
+            const totalValue = parseFloat(cartTotal.replace(/[^\d.,]/g, '').replace(',', '.'));
+            if (!isNaN(totalValue)) {
+                modalTotal.textContent = `${totalValue.toFixed(2)} ₽`;
+            }
+
+            fetch('/Cart/RefreshAntiforgeryToken')
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const newToken = doc.querySelector('input[name="__RequestVerificationToken"]')?.value;
+
+                    if (newToken) {
+                        document.getElementById('antiForgeryContainer').innerHTML =
+                            `<input type="hidden" name="__RequestVerificationToken" value="${newToken}">`;
+                    }
+                });
+
+            const orderModal = new bootstrap.Modal(document.getElementById('orderModal'));
+            orderModal.show();
+        }
+
+        function updateCart(boxId, quantityChange) {
+            fetch(`/Cart/UpdateQuantity?boxId=${boxId}&quantityChange=${quantityChange}`, {
+                method: 'POST',
+                headers: {
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const quantityElement = document.getElementById(`quantity-${boxId}`);
+                        const sumElement = document.getElementById(`sum-${boxId}`);
+                        quantityElement.textContent = data.newQuantity;
+                        sumElement.textContent = `${(data.boxPrice * data.newQuantity).toFixed(2)} ₽`;
+
+                        document.getElementById("total").textContent = `${data.total.toFixed(2)} ₽`;
+                        document.getElementById("modalTotal").textContent = `${data.total.toFixed(2)} ₽`;
+                    }
+                });
+        }
+
         function removeBox(boxId) {
             fetch(`/Cart/RemoveFromCart?boxId=${boxId}`, {
                 method: 'POST',
@@ -162,105 +210,68 @@
                     'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
                 }
             })
-                .then(response => {
-                    if (!response.ok) {
-                        return response.text().then(text => { throw new Error(text); });
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    document.getElementById(`row-${boxId}`).remove();
-                    document.getElementById("total").textContent = `${data.total.toFixed(2)} ₽`;
-
-                    if (data.total === 0) {
-                        document.querySelector("table").remove();
-                        document.querySelector("h4").remove();
-                        document.querySelector("a.custom-button").remove();
-                        const emptyMessage = document.createElement("p");
-                        emptyMessage.className = "text-center fs-4";
-                        emptyMessage.textContent = "Корзина пуста";
-                        document.querySelector(".container").appendChild(emptyMessage);
-                    }
-                });
-        }
-
-        function loadCartItems() {
-            fetch('/Cart/Index')
                 .then(response => response.json())
                 .then(data => {
-                    const cartItemsContainer = document.getElementById('cartItems');
-                    if (!data || data.length === 0) {
-                        cartItemsContainer.innerHTML = '<p>Корзина пуста</p>';
-                        document.getElementById('modalTotal').textContent = '0.00 ₽';
-                        return;
+                    if (data.total !== undefined) {
+                        document.getElementById("total").textContent = `${data.total.toFixed(2)} ₽`;
+                        document.getElementById("modalTotal").textContent = `${data.total.toFixed(2)} ₽`;
+                        document.getElementById(`row-${boxId}`).remove();
                     }
-
-                    let cartItemsHtml = '';
-                    let total = 0;
-                    data.forEach(item => {
-                        cartItemsHtml += `
-                                    <div class="row mb-2">
-                                        <div class="col-8">
-                                            <p>${item.BoxName} (x${item.Quantity})</p>
-                                        </div>
-                                        <div class="col-4 text-end">
-                                            <p>${(item.BoxPrice * item.Quantity).toFixed(2)} ₽</p>
-                                        </div>
-                                    </div>
-                                `;
-                        total += item.BoxPrice * item.Quantity;
-                    });
-
-                    cartItemsContainer.innerHTML = cartItemsHtml;
-                    document.getElementById('modalTotal').textContent = `${total.toFixed(2)} ₽`;
                 });
         }
 
-        function updateCart(boxId, delta) {
-            const quantityEl = document.getElementById(`quantity-${boxId}`);
-            const currentQuantity = parseInt(quantityEl.textContent);
-            if (delta === -1 && currentQuantity <= 1) {
-                return;
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("orderForm");
+
+            if (form) {
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault(); 
+
+                    const formData = new FormData(form);
+                    const data = {};
+
+                    for (const [key, value] of formData.entries()) {
+                        data[key] = value;
+                    }
+
+                    fetch("/Order/Create", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]').value
+                        },
+                        body: JSON.stringify(data)
+                    })
+                        .then(async (response) => {
+                            if (!response.ok) {
+                                const errorText = await response.text();
+                                try {
+                                    const parsed = JSON.parse(errorText);
+                                    throw new Error(parsed.message || "Произошла ошибка");
+                                } catch {
+                                    throw new Error(errorText || "Произошла ошибка");
+                                }
+                            }
+                            return response.json();
+                        })
+                        .then(result => {
+                            alert(result.message); 
+                            location.reload(); 
+                        })
+                        .catch(error => {
+                            console.error("Ошибка:", error);
+
+                            const errorMessageEl = document.getElementById("error-message");
+                            if (errorMessageEl) {
+                                errorMessageEl.textContent = error.message;
+                                errorMessageEl.classList.remove("d-none");
+                            } else {
+                                alert(error.message);
+                            }
+                        });
+                });
             }
+        });
 
-            fetch('/Cart/UpdateQuantity', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
-                },
-                body: JSON.stringify({
-                    boxId: boxId,
-                    quantityChange: delta
-                })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.error) {
-                        alert(data.error);
-                        return;
-                    }
-
-                    quantityEl.textContent = data.newQuantity;
-
-                    const sumEl = document.getElementById(`sum-${boxId}`);
-                    const priceEl = document.getElementById(`price-${boxId}`);
-                    const price = parseFloat(priceEl.textContent.replace('₽', '').trim());
-
-                    sumEl.textContent = (price * data.newQuantity).toFixed(2) + " ₽";
-                    document.getElementById('total').textContent = data.newTotal.toFixed(2) + " ₽";
-
-                    if (document.getElementById('orderModal')?.classList.contains('show')) {
-                        loadCartItems();
-                    }
-                })
-                .catch(err => console.error('Ошибка:', err));
-        }
-
-        function showOrderModal() {
-            loadCartItems();
-            var orderModal = new bootstrap.Modal(document.getElementById('orderModal'));
-            orderModal.show();
-        }
     </script>
 }
