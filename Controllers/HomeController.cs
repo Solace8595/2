@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PastaBar.Data;
+using Pastar.Data;
 using Pastar.Models;
 using Pastar.ViewModels;
 using System.Diagnostics;
@@ -37,13 +37,15 @@ namespace Pastar.Controllers
         {
             return View();
         }
+        public IActionResult BonusCard()
+        {
+            return View();
+        }
         public IActionResult Boxes()
         {
             var rootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img");
             var directories = Directory.GetDirectories(rootPath);
-
-            // —начала загружаем все боксы из Ѕƒ
-            var dbBoxes = _context.Boxes.ToList(); // _context Ч это твой DbContext
+            var dbBoxes = _context.Boxes.ToList(); 
 
             var boxes = new List<BoxViewModel>();
 
@@ -51,7 +53,6 @@ namespace Pastar.Controllers
             {
                 var folderName = Path.GetFileName(dir);
 
-                // »щем в Ѕƒ бокс с таким же именем, как папка
                 var matchingBox = dbBoxes.FirstOrDefault(b => b.BoxName == folderName);
 
                 if (matchingBox != null)

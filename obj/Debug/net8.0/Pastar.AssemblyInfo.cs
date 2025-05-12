@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pastar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8db4d7247c7f823a7fee9c3ca92d0e082548eac6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af3f565007a18e9ede2bf8a99f3a86fd155da896")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pastar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pastar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

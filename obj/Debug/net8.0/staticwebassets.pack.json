@@ -41,6 +41,22 @@
       "PackagePath": "staticwebassets\\fonts\\OnestThin1602-hint.ttf"
     },
     {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Card\\Card1.png",
+      "PackagePath": "staticwebassets\\img\\Card\\Card1.png"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Card\\Card2.png",
+      "PackagePath": "staticwebassets\\img\\Card\\Card2.png"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Card\\Card3.png",
+      "PackagePath": "staticwebassets\\img\\Card\\Card3.png"
+    },
+    {
+      "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Card\\Card4.png",
+      "PackagePath": "staticwebassets\\img\\Card\\Card4.png"
+    },
+    {
       "Id": "D:\\Курсовая 2 курс\\Pastar\\wwwroot\\img\\Карусель\\карусель1.jpg",
       "PackagePath": "staticwebassets\\img\\Карусель\\карусель1.jpg"
     },

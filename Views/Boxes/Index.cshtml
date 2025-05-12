@@ -9,7 +9,6 @@
     @foreach (var box in Model)
     {
         <div class="row mb-5 align-items-center">
-            <!-- Левая часть: карусель -->
             <div class="col-lg-6 mb-3 mb-lg-0">
                 <div id="carousel-@box.BoxId" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner rounded shadow-sm">
@@ -38,7 +37,6 @@
                 </div>
             </div>
 
-            <!-- Правая часть: описание, цена и счетчик -->
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <h4 class="fw-bold mb-3">@box.BoxName</h4>
                 <p class="mb-4">@box.BoxDescription</p>
@@ -46,7 +44,7 @@
 
                 <div class="d-flex align-items-center gap-2 mt-3">
                     <button class="btn btn-outline-secondary" onclick="updateCart(@box.BoxId, -1)">−</button>
-                    <span id="quantity-@box.BoxId">0</span>
+                    <span id="quantity-@box.BoxId">@box.Quantity</span>
                     <button class="btn btn-outline-secondary" onclick="updateCart(@box.BoxId, 1)">+</button>
                 </div>
             </div>
@@ -55,7 +53,6 @@
     }
 </div>
 
-<!-- Модальное окно для увеличенного изображения -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-transparent border-0">
@@ -72,17 +69,38 @@
 
         function updateCart(boxId, delta) {
             const current = quantities[boxId] || 0;
-            const newQuantity = Math.max(0, current + delta);
+            const newQuantity = Math.max(0, current + delta); // Нельзя установить количество меньше 0
             quantities[boxId] = newQuantity;
             document.getElementById('quantity-' + boxId).textContent = newQuantity;
 
+            // Проверяем, что значение не 0 перед отправкой
+            if (newQuantity > 0) {
+                sendUpdateToServer(boxId, newQuantity);
+            } else {
+                // Если количество 0, можно либо удалить товар, либо оставить как есть
+                removeFromCart(boxId);
+            }
+        }
+
+        function sendUpdateToServer(boxId, quantity) {
             fetch('/Cart/UpdateQuantity', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
                 },
-                body: JSON.stringify({ boxId: boxId, quantity: newQuantity })
+                body: JSON.stringify({ boxId: boxId, quantity: quantity })
+            });
+        }
+
+        function removeFromCart(boxId) {
+            fetch('/Cart/RemoveFromCart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ boxId: boxId })
             });
         }
 

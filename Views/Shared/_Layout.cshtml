@@ -28,7 +28,7 @@
         <a asp-controller="Boxes" asp-action="Index" class="custom-button">Боксы</a>
         <a asp-controller="Home" asp-action="Menu" class="custom-button">Меню</a>
         <a asp-controller="Home" asp-action="BonusCard" class="custom-button">Бонусная карта</a>
-        <a asp-controller="Home" asp-action="Reservation" class="custom-button">Бронь</a>
+        <a asp-controller="Booking" asp-action="Index" class="custom-button">Бронь</a>
         <a asp-controller="Cart" asp-action="Index" class="custom-button">🛒</a>
 
     </div>
@@ -48,3 +48,13 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var phoneInput = document.querySelector('input[name="Phone"]');
+        if (phoneInput) {
+            var im = new Inputmask("+7 (999) 999-99-99");
+            im.mask(phoneInput);
+        }
+    });
+</script>
+

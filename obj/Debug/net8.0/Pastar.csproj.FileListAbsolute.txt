@@ -35,6 +35,7 @@ D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\Pastar.csproj.CoreCompile
 D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\Pastar.MvcApplicationPartsAssemblyInfo.cache
 D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\Pastar.RazorAssemblyInfo.cache
 D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\Pastar.RazorAssemblyInfo.cs
+D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\Pastar.sourcelink.json
 D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\staticwebassets.build.json
 D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\staticwebassets.development.json
 D:\Курсовая 2 курс\Pastar\obj\Debug\net8.0\staticwebassets\msbuild.Pastar.Microsoft.AspNetCore.StaticWebAssets.props

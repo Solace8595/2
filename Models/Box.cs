@@ -7,7 +7,6 @@
         public double BoxPrice { get; set; }
         public string? BoxDescription { get; set; }
 
-        public ICollection<Order>? Orders { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
-
 }

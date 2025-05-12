@@ -13,7 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\NewFolder\" />
     <Folder Include="wwwroot\fonts\" />
+    <Folder Include="wwwroot\img\Card\" />
     <Folder Include="wwwroot\img\Карусель\" />
     <Folder Include="wwwroot\img\Меню\" />
     <Folder Include="wwwroot\img\Спагетти классические\" />

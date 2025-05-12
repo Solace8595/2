@@ -12,7 +12,7 @@
     }
     public class UpdateCartItemRequest
     {
-        public int BoxId { get; set; }  // ID бокса
-        public int Quantity { get; set; }  // Количество товара
+        public long BoxId { get; set; }  
+        public int Quantity { get; set; }  
     }
 }

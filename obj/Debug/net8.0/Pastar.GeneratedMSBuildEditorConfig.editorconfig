@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Курсовая 2 курс\Pastar
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Курсовая 2 курс/Pastar/Views/Booking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Курсовая 2 курс/Pastar/Views/Boxes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm94ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Курсовая 2 курс/Pastar/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Курсовая 2 курс/Pastar/Views/Home/BonusCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb251c0NhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Курсовая 2 курс/Pastar/Views/Home/Index.cshtml]

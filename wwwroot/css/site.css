@@ -102,15 +102,15 @@ body {
     border-radius: 25px;
     border: 2px solid #ccc;
     background-color: white;
-    color: black; /* ? цвет текста */
+    color: black; 
     margin-left: 15px;
     text-decoration: none;
-    transition: background-color 0.3s ease; /* ? плавное изменение цвета */
+    transition: background-color 0.3s ease; 
     width: auto;
 }
 
     .custom-button:hover {
-        background-color: #f5f5f5; /* лёгкий серый фон при наведении */
+        background-color: #f5f5f5; 
     }
 .btn-outline-danger {
     border: 2px solid #dc3545;
@@ -125,8 +125,8 @@ body {
     }
 <style >
 .modal-dialog {
-    max-width: 90vw; /* Ограничиваем ширину окна */
-    max-height: 90vh; /* Ограничиваем высоту окна */
+    max-width: 90vw; 
+    max-height: 90vh; 
 }
 
 .modal-body {
@@ -134,15 +134,15 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
-    min-height: 300px; /* Минимальная высота для маленьких изображений */
+    min-height: 300px; 
 }
 
     .modal-body img {
-        max-width: 90vw; /* Изображение не выйдет за пределы окна по ширине */
-        max-height: 80vh; /* Изображение не выйдет за пределы окна по высоте */
+        max-width: 90vw; 
+        max-height: 80vh; 
         width: auto;
         height: auto;
-        object-fit: contain; /* Сохраняет пропорции */
+        object-fit: contain; 
         margin: auto;
     }
 

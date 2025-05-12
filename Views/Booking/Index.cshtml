@@ -1,0 +1,79 @@
+﻿@model Pastar.ViewModels.BookingViewModel
+@{
+    ViewData["Title"] = "Бронирование стола";
+    var methods = ViewBag.ConnectionMethods as List<Pastar.Models.WayOfConnection>;
+}
+
+<div class="container py-5">
+    <h1 class="text-center mb-4">Забронировать стол</h1>
+
+    <div class="alert alert-danger text-center">
+        Для подтверждения брони с вами обязательно свяжется наш менеджер. Без подтверждения бронь аннулируется.
+    </div>
+
+    @if (ViewBag.Success != null)
+    {
+        <div class="alert alert-success text-center">@ViewBag.Success</div>
+    }
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger text-center">@ViewBag.Error</div>
+    }
+
+    <form asp-action="Index" method="post" class="mx-auto" style="max-width: 600px;">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label asp-for="FirstName" class="form-label">Имя <span class="text-danger">*</span></label>
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="LastName" class="form-label">Фамилия <span class="text-danger">*</span></label>
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ContactPhone" class="form-label">Контактный телефон <span class="text-danger">*</span></label>
+            <input asp-for="ContactPhone" class="form-control" />
+            <span asp-validation-for="ContactPhone" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ConnectionMethodId" class="form-label">Способ связи <span class="text-danger">*</span></label>
+            <select asp-for="ConnectionMethodId" class="form-select">
+                <option value="">Выберите способ</option>
+                @if (methods != null)
+                {
+                    foreach (var method in methods)
+                    {
+                        <option value="@method.Id">@method.ConnectionMethod</option>
+                    }
+                }
+            </select>
+            <span asp-validation-for="ConnectionMethodId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="BookingDateTime" class="form-label">Дата и время <span class="text-danger">*</span></label>
+            <input asp-for="BookingDateTime" class="form-control" type="datetime-local" />
+            <span asp-validation-for="BookingDateTime" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="NumberOfPeople" class="form-label">Количество человек <span class="text-danger">*</span></label>
+            <input asp-for="NumberOfPeople" class="form-control" type="number" min="1" max="20" />
+            <span asp-validation-for="NumberOfPeople" class="text-danger"></span>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="custom-button">Забронировать</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @Html.Partial("_ValidationScriptsPartial")
+}
