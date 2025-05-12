@@ -19,6 +19,7 @@ namespace Pastar.Controllers
             _context = context;
         }
 
+        // Метод отображения боксов на странице
         public IActionResult Index()
         {
             var boxes = _context.Boxes.ToList();
@@ -50,38 +51,49 @@ namespace Pastar.Controllers
             return View(result);
         }
 
+        // Метод для добавления бокса в корзину
         [HttpPost]
         public IActionResult AddToCart(long boxId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
+            // Если бокс уже есть в корзине, увеличиваем его количество, иначе добавляем новый
             if (cart.ContainsKey(boxId))
+            {
                 cart[boxId]++;
+            }
             else
+            {
                 cart[boxId] = 1;
+            }
 
+            // Сохраняем корзину в сессию
             HttpContext.Session.SetObjectAsJson("Cart", cart);
 
-            return Json(new { success = true });
+            return RedirectToAction("Index"); // Возвращаем обратно на страницу боксов
         }
 
+        // Метод для удаления бокса из корзины
         [HttpPost]
         public IActionResult RemoveFromCart(long boxId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
+            // Удаляем бокс из корзины
             cart.Remove(boxId);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
 
             return RedirectToAction("Index");
         }
 
+        // Метод для обновления количества в корзине
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult UpdateQuantity([FromBody] UpdateCartItemRequest request)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
+            // Если количество меньше или равно 0, удаляем товар из корзины
             if (request.Quantity <= 0)
             {
                 cart.Remove(request.BoxId);

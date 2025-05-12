@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Pastar.Data;
-using Pastar.Helpers;
 using Pastar.Models;
-using Pastar.ViewModels;
+using Pastar.Helpers;
 using System.Linq;
+using Pastar.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace Pastar.Controllers
 {
@@ -14,6 +15,29 @@ namespace Pastar.Controllers
         public CartController(ApplicationDbContext context)
         {
             _context = context;
+        }
+
+        [HttpPost]
+        public IActionResult AddToCart(long boxId)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
+
+            // Проверяем, есть ли уже этот бокс в корзине
+            if (cart.ContainsKey(boxId))
+            {
+                // Если есть, увеличиваем количество
+                cart[boxId]++;
+            }
+            else
+            {
+                // Если нет, добавляем бокс с количеством 1
+                cart[boxId] = 1;
+            }
+
+            // Сохраняем обновленную корзину в сессии
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return Ok(new { success = true });
         }
 
         [ResponseCache(NoStore = true)]
@@ -57,74 +81,65 @@ namespace Pastar.Controllers
             ViewBag.ConnectionMethods = _context.WayOfConnections.ToList();
             return View(boxes);
         }
-
+        // Метод для обновления количества бокса в корзине
         [HttpPost]
-        public IActionResult AddToCart(long boxId)
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdateQuantity([FromBody] UpdateCartItemRequest request)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
-            if (cart.ContainsKey(boxId))
-                cart[boxId]++;
+            if (request.Quantity <= 0)
+            {
+                cart.Remove(request.BoxId);
+            }
             else
-                cart[boxId] = 1;
+            {
+                cart[request.BoxId] = request.Quantity;
+            }
 
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-
-            return Ok(new { success = true });
+            return Ok();
         }
 
+        // Метод для удаления бокса из корзины
         [HttpPost]
-        public IActionResult UpdateQuantity(long boxId, int quantityChange)
+        [ValidateAntiForgeryToken]
+        public IActionResult RemoveFromCart([FromBody] UpdateCartItemRequest request)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
-            var box = _context.Boxes.FirstOrDefault(b => b.BoxId == boxId);
 
-            if (box == null)
-                return Json(new { error = "Бокс не найден" });
+            cart.Remove(request.BoxId);
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
 
-            if (cart.ContainsKey(boxId))
+            return Ok();
+        }
+        public class CartItem
+        {
+            public Box Box { get; set; }
+            public int Quantity { get; set; }
+        }
+        public IActionResult ViewCart()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
+
+            var cartItems = new List<CartItem>();
+
+            foreach (var item in cart)
             {
-                cart[boxId] += quantityChange;
-                if (cart[boxId] <= 0)
+                var box = _context.Boxes.FirstOrDefault(b => b.BoxId == item.Key);
+                if (box != null)
                 {
-                    cart.Remove(boxId);
+                    cartItems.Add(new CartItem
+                    {
+                        Box = box,
+                        Quantity = item.Value
+                    });
                 }
             }
-            else
-            {
-                cart[boxId] = 1;
-            }
 
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
-
-            // Подсчёт суммы
-            var boxIds = cart.Keys.ToList();
-            var boxesInCart = _context.Boxes
-                .Where(b => boxIds.Contains(b.BoxId))
-                .ToDictionary(b => b.BoxId);
-
-            var total = cart.Sum(c => boxesInCart.TryGetValue(c.Key, out var currentBox)
-                                        ? currentBox.BoxPrice * c.Value
-                                        : 0);
-
-            return Json(new
-            {
-                newQuantity = cart.TryGetValue(boxId, out var qty) ? qty : 0,
-                newTotal = total
-            });
+            return View(cartItems);
         }
 
-        [HttpPost]
-        public IActionResult RemoveFromCart(long boxId)
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
-
-            if (cart.Remove(boxId))
-            {
-                HttpContext.Session.SetObjectAsJson("Cart", cart);
-            }
-
-            return Ok(new { success = true });
-        }
     }
 }
+
