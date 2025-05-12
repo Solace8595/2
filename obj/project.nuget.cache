@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/+Yw0NpTGZIGTm5LpMa8LNj5UNEdRV8YEa6Mi/mjkJVwdcfRUeI3By+JM/p/Z6A3BV4dyWd8RVepKl2Uj1ovCA==",
+  "dgSpecHash": "sOak/LMxf61FlU6/4X2m5B5Zn/F1T4i87dQFq/NiCsLU2g545Kh1259wTTZaqmEG4+IzDQT06TrgQtf1nxd37w==",
   "success": true,
   "projectFilePath": "D:\\Курсовая 2 курс\\Pastar\\Pastar.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\murzi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.4\\microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\microsoft.extensions.options\\9.0.4\\microsoft.extensions.options.9.0.4.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.4\\microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "C:\\Users\\murzi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\system.clientmodel\\1.2.1\\system.clientmodel.1.2.1.nupkg.sha512",
@@ -30,7 +31,9 @@
     "C:\\Users\\murzi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\murzi\\.nuget\\packages\\system.text.json\\6.0.10\\system.text.json.6.0.10.nupkg.sha512",
-    "C:\\Users\\murzi\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\murzi\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\murzi\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512",
+    "C:\\Users\\murzi\\.nuget\\packages\\telegram.bot.extensions\\1.0.0\\telegram.bot.extensions.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
