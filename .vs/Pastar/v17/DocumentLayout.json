@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\models\\wayofconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:models\\wayofconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\controllers\\boxescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:controllers\\boxescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:helpers\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\telegrambotbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:helpers\\telegrambotbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:helpers\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:viewmodels\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,26 +95,6 @@
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:viewmodels\\boxviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\controllers\\boxescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:controllers\\boxescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:helpers\\telegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\telegrambotbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:helpers\\telegrambotbackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\helpers\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:helpers\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -123,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:views\\home\\bonuscard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\models\\wayofconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:models\\wayofconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|d:\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\pastar\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{ED5AC6E7-6F87-474A-BDA7-55B5A4AED62B}|Pastar.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -142,32 +142,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Controllers\\CartController.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAiwLkAAABSAAAA",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:37:22.21Z",
+              "WhenOpened": "2025-05-01T08:27:37.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "TelegramBotBackgroundService.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotBackgroundService.cs",
+              "RelativeDocumentMoniker": "Helpers\\TelegramBotBackgroundService.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotBackgroundService.cs",
+              "RelativeToolTip": "Helpers\\TelegramBotBackgroundService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:28:33.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelegramBotService.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotService.cs",
+              "RelativeDocumentMoniker": "Helpers\\TelegramBotService.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotService.cs",
+              "RelativeToolTip": "Helpers\\TelegramBotService.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAGcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:16:23.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BoxesController.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\BoxesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BoxesController.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\BoxesController.cs",
+              "RelativeToolTip": "Controllers\\BoxesController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAIwIIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T11:34:58.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OrderController.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
               "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAmwBUAAAAIAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAmwGwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T19:04:55.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WayOfConnection.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\WayOfConnection.cs",
+              "RelativeDocumentMoniker": "Models\\WayOfConnection.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\WayOfConnection.cs",
+              "RelativeToolTip": "Models\\WayOfConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T08:25:52.845Z",
               "EditorCaption": ""
             },
             {
@@ -185,46 +237,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAqwHIAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "TelegramBot.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBot.cs",
+              "RelativeDocumentMoniker": "Helpers\\TelegramBot.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBot.cs",
+              "RelativeToolTip": "Helpers\\TelegramBot.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwEQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:28:32.276Z",
+              "WhenOpened": "2025-05-12T12:51:46.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SessionExtensions.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\SessionExtensions.cs",
-              "RelativeDocumentMoniker": "Helpers\\SessionExtensions.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\SessionExtensions.cs",
-              "RelativeToolTip": "Helpers\\SessionExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:41:00.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAAAQBAAAAAAAAAAAmwAEBAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T13:38:51.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -237,7 +263,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAQBAAAAAAAAAAAmwAEBAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T13:38:51.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "Helpers\\SessionExtensions.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\SessionExtensions.cs",
+              "RelativeToolTip": "Helpers\\SessionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T13:41:00.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAqwHIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T08:28:32.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAiwLkAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T13:37:22.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "BookingController.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
@@ -245,12 +319,11 @@
               "RelativeToolTip": "Controllers\\BookingController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T08:27:42.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:27:42.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -258,12 +331,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-01T09:03:30.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T09:03:30.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Promocode.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\Promocode.cs",
               "RelativeDocumentMoniker": "Models\\Promocode.cs",
@@ -271,12 +343,11 @@
               "RelativeToolTip": "Models\\Promocode.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:26:57.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T08:26:57.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "Models\\OrderItem.cs",
@@ -284,12 +355,11 @@
               "RelativeToolTip": "Models\\OrderItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T19:40:13.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T19:40:13.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "menu.cshtml",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Home\\menu.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\menu.cshtml",
@@ -297,12 +367,11 @@
               "RelativeToolTip": "Views\\Home\\menu.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAABoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T12:07:40.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T12:07:40.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "additional-methods.js",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
@@ -310,12 +379,11 @@
               "RelativeToolTip": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
               "ViewState": "AQIAAFUDAAAAAAAAAADwv1oDAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-12T16:01:05.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T16:01:05.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Boxes\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Boxes\\Index.cshtml",
@@ -323,12 +391,11 @@
               "RelativeToolTip": "Views\\Boxes\\Index.cshtml",
               "ViewState": "AQIAAFgAAAAAAAAAAAAcwHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-03T11:38:25.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T11:38:25.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "BoxViewModel.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\ViewModels\\BoxViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BoxViewModel.cs",
@@ -336,12 +403,11 @@
               "RelativeToolTip": "ViewModels\\BoxViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T11:34:23.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T11:34:23.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Box.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\Box.cs",
               "RelativeDocumentMoniker": "Models\\Box.cs",
@@ -349,12 +415,11 @@
               "RelativeToolTip": "Models\\Box.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:25:15.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T08:25:15.76Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "additional-methods.min.js",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
               "RelativeDocumentMoniker": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
@@ -362,77 +427,11 @@
               "RelativeToolTip": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAMAAAA9JwAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-12T16:01:12.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T16:01:12.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\Order.cs",
-              "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:27:37.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BoxesController.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\BoxesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BoxesController.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\BoxesController.cs",
-              "RelativeToolTip": "Controllers\\BoxesController.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAIwIIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T11:34:58.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TelegramBotBackgroundService.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotBackgroundService.cs",
-              "RelativeDocumentMoniker": "Helpers\\TelegramBotBackgroundService.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotBackgroundService.cs",
-              "RelativeToolTip": "Helpers\\TelegramBotBackgroundService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:28:33.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TelegramBot.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBot.cs",
-              "RelativeDocumentMoniker": "Helpers\\TelegramBot.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBot.cs",
-              "RelativeToolTip": "Helpers\\TelegramBot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T12:51:46.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TelegramBotService.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotService.cs",
-              "RelativeDocumentMoniker": "Helpers\\TelegramBotService.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Helpers\\TelegramBotService.cs",
-              "RelativeToolTip": "Helpers\\TelegramBotService.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAgwA0AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:16:23.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Booking\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Booking\\Index.cshtml",
@@ -440,12 +439,11 @@
               "RelativeToolTip": "Views\\Booking\\Index.cshtml",
               "ViewState": "AQIAAC8AAAAAAAAAAAAcwE8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T08:29:51.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:29:51.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "BookTable.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\BookTable.cs",
               "RelativeDocumentMoniker": "Models\\BookTable.cs",
@@ -453,12 +451,11 @@
               "RelativeToolTip": "Models\\BookTable.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:27:15.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T08:27:15.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "site.js",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -466,12 +463,11 @@
               "RelativeToolTip": "wwwroot\\js\\site.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-07T13:33:55.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:33:55.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "BookingViewModel.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\ViewModels\\BookingViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\BookingViewModel.cs",
@@ -479,12 +475,11 @@
               "RelativeToolTip": "ViewModels\\BookingViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T08:26:55.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:26:55.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\ViewModels\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\ErrorViewModel.cs",
@@ -492,12 +487,11 @@
               "RelativeToolTip": "ViewModels\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:35:45.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T08:35:45.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -505,12 +499,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T12:08:01.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T12:08:01.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -518,12 +511,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T10:36:43.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T10:36:43.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "BonusCard.cshtml",
               "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Views\\Home\\BonusCard.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\BonusCard.cshtml",
@@ -531,21 +523,7 @@
               "RelativeToolTip": "Views\\Home\\BonusCard.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T19:48:21.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "WayOfConnection.cs",
-              "DocumentMoniker": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\WayOfConnection.cs",
-              "RelativeDocumentMoniker": "Models\\WayOfConnection.cs",
-              "ToolTip": "D:\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F 2 \u043A\u0443\u0440\u0441\\Pastar\\Models\\WayOfConnection.cs",
-              "RelativeToolTip": "Models\\WayOfConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T08:25:52.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T19:48:21.293Z"
             },
             {
               "$type": "Document",
@@ -557,8 +535,7 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AQIAAH4AAAAAAAAAAAAqwJAAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-01T08:56:47.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T08:56:47.621Z"
             },
             {
               "$type": "Document",
@@ -570,8 +547,7 @@
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T10:38:31.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T10:38:31.681Z"
             }
           ]
         },
