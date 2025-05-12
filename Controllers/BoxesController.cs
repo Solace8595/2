@@ -53,33 +53,30 @@ namespace Pastar.Controllers
 
         // Метод для добавления бокса в корзину
         [HttpPost]
-        public IActionResult AddToCart(long boxId)
+        public IActionResult AddToCart(long boxId, int quantity)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
-            // Если бокс уже есть в корзине, увеличиваем его количество, иначе добавляем новый
             if (cart.ContainsKey(boxId))
             {
-                cart[boxId]++;
+                cart[boxId] += quantity;
             }
             else
             {
-                cart[boxId] = 1;
+                cart[boxId] = quantity;
             }
 
-            // Сохраняем корзину в сессию
             HttpContext.Session.SetObjectAsJson("Cart", cart);
 
-            return RedirectToAction("Index"); // Возвращаем обратно на страницу боксов
+            return RedirectToAction("Index");
         }
+
 
         // Метод для удаления бокса из корзины
         [HttpPost]
         public IActionResult RemoveFromCart(long boxId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
-
-            // Удаляем бокс из корзины
             cart.Remove(boxId);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
 
@@ -93,7 +90,6 @@ namespace Pastar.Controllers
         {
             var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
 
-            // Если количество меньше или равно 0, удаляем товар из корзины
             if (request.Quantity <= 0)
             {
                 cart.Remove(request.BoxId);
@@ -106,5 +102,29 @@ namespace Pastar.Controllers
             HttpContext.Session.SetObjectAsJson("Cart", cart);
             return Ok();
         }
+        [HttpPost]
+        public IActionResult UpdateCart([FromBody] UpdateCartRequest request)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
+
+            if (request.Quantity <= 0)
+            {
+                cart.Remove(request.BoxId); 
+            }
+            else
+            {
+                cart[request.BoxId] = request.Quantity; 
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return Json(new { success = true });
+        }
+        public class UpdateCartRequest
+        {
+            public long BoxId { get; set; }
+            public int Quantity { get; set; }
+        }
+
     }
 }

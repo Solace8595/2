@@ -69,29 +69,34 @@
 
         function updateCart(boxId, delta) {
             const current = quantities[boxId] || 0;
-            const newQuantity = Math.max(0, current + delta); // Нельзя установить количество меньше 0
+            const newQuantity = Math.max(0, current + delta); 
             quantities[boxId] = newQuantity;
             document.getElementById('quantity-' + boxId).textContent = newQuantity;
-
-            // Проверяем, что значение не 0 перед отправкой
             if (newQuantity > 0) {
                 sendUpdateToServer(boxId, newQuantity);
             } else {
-                // Если количество 0, можно либо удалить товар, либо оставить как есть
                 removeFromCart(boxId);
             }
         }
 
         function sendUpdateToServer(boxId, quantity) {
-            fetch('/Cart/UpdateQuantity', {
+            fetch('/Boxes/UpdateCart', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
                 },
                 body: JSON.stringify({ boxId: boxId, quantity: quantity })
-            });
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        console.log("Корзина обновлена");
+                    }
+                })
+                .catch(error => console.error("Ошибка при обновлении корзины:", error));
         }
+
 
         function removeFromCart(boxId) {
             fetch('/Cart/RemoveFromCart', {

@@ -155,49 +155,6 @@
 
 @section Scripts {
     <script>
-        // Функция для обновления количества товара
-        [HttpPost]
-        public IActionResult UpdateQuantity(long boxId, int quantityChange)
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<Dictionary<long, int>>("Cart") ?? new Dictionary<long, int>();
-            var box = _context.Boxes.FirstOrDefault(b => b.BoxId == boxId);
-
-            if (box == null)
-                return Json(new { error = "Бокс не найден" });
-
-            if (cart.ContainsKey(boxId)) {
-                cart[boxId] += quantityChange;
-                if (cart[boxId] <= 0) {
-                    cart.Remove(boxId);
-                }
-            }
-            else {
-                cart[boxId] = 1;
-            }
-
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
-
-            // Подсчёт суммы
-            var boxIds = cart.Keys.ToList();
-            var boxesInCart = _context.Boxes
-                .Where(b => boxIds.Contains(b.BoxId))
-                .ToDictionary(b => b.BoxId);
-
-            var total = cart.Sum(c => {
-                if (boxesInCart.TryGetValue(c.Key, out var currentBox))
-            return currentBox.BoxPrice * c.Value;
-            return 0;
-        });
-
-        return Json(new
-            {
-                newQuantity = cart.TryGetValue(boxId, out var qty) ? qty : 0,
-            newTotal = total
-            });
-        }
-
-
-        // Удаление товара из корзины
         function removeBox(boxId) {
             fetch(`/Cart/RemoveFromCart?boxId=${boxId}`, {
                 method: 'POST',
@@ -227,7 +184,6 @@
                 });
         }
 
-        // Функция для загрузки товаров в модальном окне
         function loadCartItems() {
             fetch('/Cart/Index')
                 .then(response => response.json())
@@ -259,7 +215,14 @@
                     document.getElementById('modalTotal').textContent = `${total.toFixed(2)} ₽`;
                 });
         }
+
         function updateCart(boxId, delta) {
+            const quantityEl = document.getElementById(`quantity-${boxId}`);
+            const currentQuantity = parseInt(quantityEl.textContent);
+            if (delta === -1 && currentQuantity <= 1) {
+                return;
+            }
+
             fetch('/Cart/UpdateQuantity', {
                 method: 'POST',
                 headers: {
@@ -278,13 +241,12 @@
                         return;
                     }
 
-                    const quantityEl = document.getElementById(`quantity-${boxId}`);
+                    quantityEl.textContent = data.newQuantity;
+
                     const sumEl = document.getElementById(`sum-${boxId}`);
                     const priceEl = document.getElementById(`price-${boxId}`);
-
                     const price = parseFloat(priceEl.textContent.replace('₽', '').trim());
 
-                    quantityEl.textContent = data.newQuantity;
                     sumEl.textContent = (price * data.newQuantity).toFixed(2) + " ₽";
                     document.getElementById('total').textContent = data.newTotal.toFixed(2) + " ₽";
 
@@ -294,7 +256,6 @@
                 })
                 .catch(err => console.error('Ошибка:', err));
         }
-
 
         function showOrderModal() {
             loadCartItems();
