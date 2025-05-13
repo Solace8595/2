@@ -183,11 +183,16 @@
         }
 
         function updateCart(boxId, quantityChange) {
-            fetch(`/Cart/UpdateQuantity?boxId=${boxId}&quantityChange=${quantityChange}`, {
-                method: 'POST',
+            fetch("/Cart/UpdateQuantity", {
+                method: "POST",
                 headers: {
-                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
-                }
+                    "Content-Type": "application/json",
+                    "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({
+                    BoxId: boxId,
+                    QuantityChange: quantityChange
+                })
             })
                 .then(response => response.json())
                 .then(data => {

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookingController">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEQAAAAAAA=</HashCode>
+      <FileName>Controllers\BookingController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Controllers.BoxesController">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Pastar.Controllers.BoxesController.UpdateCartRequest" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\BoxesController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAEEAAAAAAAAAAAGAAAAAECA=</HashCode>
+      <FileName>Controllers\BoxesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Controllers.CartController">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Pastar.Controllers.CartController.CartUpdateModel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\CartController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Pastar.Controllers.CartController.CartItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\CartController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAABAAAAAAAAAEAAAAAAIAAAAGAABAAACA=</HashCode>
+      <FileName>Controllers\CartController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Controllers.HomeController">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABQAAAAAAAAAAIAAKAQAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Controllers.OrderController">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgABAAAAAAAAAAAAAAAAEAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\OrderController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Data.ApplicationDbContext">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAAAEAAAAAAACAAAAAEAACAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Data\ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Helpers.SessionExtensions">
+    <Position X="11.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Helpers\SessionExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Helpers.TelegramBot">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAgAAAAEAAAAEAAAAAAQAAEAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\TelegramBot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Helpers.TelegramBotBackgroundService" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAQAAAAAAA=</HashCode>
+      <FileName>Helpers\TelegramBotBackgroundService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pastar.Helpers.TelegramBotService">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAgAAQEJAAA=</HashCode>
+      <FileName>Helpers\TelegramBotService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.BookTable">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAECAEAAAEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\BookTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.Box">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAEAAAAAAAAASAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Models\Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.Order">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAECEECAACAAAACAQAAAAAAAQAAAAAAAAAAAAQAg=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.OrderItem">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBECAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\OrderItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.Promocode">
+    <Position X="17.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEKAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Promocode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.WayOfConnection">
+    <Position X="15.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WayOfConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.ViewModels.BookingViewModel">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEAAEAAAEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\BookingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.ViewModels.BoxViewModel">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAABAAAAAAASAAAAAAAAAAAAAAAgAAAACA=</HashCode>
+      <FileName>ViewModels\BoxViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.ViewModels.UpdateCartItemRequest">
+    <Position X="5.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ViewModels\BoxViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.ViewModels.OrderViewModel">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEACAAAAAAAAAQAAAAAAAAAAAAAAAAIBAAAAg=</HashCode>
+      <FileName>ViewModels\OrderViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pastar.Models.ErrorViewModel">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

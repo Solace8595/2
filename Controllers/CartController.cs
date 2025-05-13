@@ -110,11 +110,12 @@ namespace Pastar.Controllers
 
             return Json(new
             {
+                success = true,
                 newQuantity = cart[model.BoxId],
-                newTotal = total
+                boxPrice = box.BoxPrice,
+                total = total
             });
         }
-
         [HttpPost]
         public IActionResult RemoveFromCart(long boxId)
         {
